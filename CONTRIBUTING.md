@@ -16,12 +16,14 @@
 
 ## Verifying Changes
 
-1. Run `npm install --save-dev` to install the dependencies.
-1. Run `npm run build` to build the docs.
-1. Run `rpm run lint` to lint the docs.
-1. Run `npm run lint:fix` to fix linting errors, if needed.
-1. Run `npm run test:links` to verify links.
-1. Run `npm run test:tables` to verify table formatting.
-1. Run `npm run fix:tables` to fix table formatting, if needed.
+To ensure the integrity of your contributions, follow these steps:
+
+1. Execute `npm install --save-dev` to install the required dependencies.
+1. Run `npm run build` to compile the documentation.
+1. Utilize `npm run lint` to perform a documentation linting check.
+1. Correct linting errors, if any, by using `npm run lint:fix`.
+1. Validate links by running `npm run test:links`.
+1. Confirm proper table formatting by executing `npm run test:tables`.
+1. If necessary, rectify table formatting using `npm run fix:tables`. 
 
 See the [README](https://github.com/discord/discord-api-docs/blob/main/README.md) for licensing and legal information.
