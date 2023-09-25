@@ -8,11 +8,11 @@ SKUs (stock-keeping units) in Discord represent premium offerings that can be ma
 
 | Field          | Type      | Description                                                 |
 | -------------- | --------- | ----------------------------------------------------------- |
-| id             | todo      | ID of SKU                                            |
+| id             | todo      | ID of SKU                                                   |
 | type           | integer   | [Type of SKU](#DOCS_MONETIZATION_SKUS/sku-object-sku-types) |
 | application_id | snowflake | ID of the parent application                                |
-| name           | string    | Customer-facing name of your premium offering           |
-| slug           | string    | System-generated URL slug based on the SKU's name          |
+| name           | string    | Customer-facing name of your premium offering               |
+| slug           | string    | System-generated URL slug based on the SKU's name           |
 
 ###### SKU Example
 
