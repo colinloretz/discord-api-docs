@@ -580,24 +580,26 @@ Certain embed types are used to power special UIs. These embeds use [fields](#DO
 > info
 > For the `attachments` array in Message Create/Edit requests, only the `id` is required.
 
-| Field          | Type      | Description                                                                                                                                      |
-|----------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| id             | snowflake | attachment id                                                                                                                                    |
-| filename       | string    | name of file attached                                                                                                                            |
-| title?         | string    | the title of the file                                                                                                                            |
-| description?   | string    | description for the file (max 1024 characters)                                                                                                   |
-| content_type?  | string    | the attachment's [media type](https://en.wikipedia.org/wiki/Media_type)                                                                          |
-| size           | integer   | size of file in bytes                                                                                                                            |
-| url            | string    | source url of file                                                                                                                               |
-| proxy_url      | string    | a proxied url of file                                                                                                                            |
-| height?        | ?integer  | height of file (if image)                                                                                                                        |
-| width?         | ?integer  | width of file (if image)                                                                                                                         |
-| ephemeral? \*  | boolean   | whether this attachment is ephemeral                                                                                                             |
-| duration_secs? | float     | the duration of the audio file (currently for voice messages)                                                                                    |
-| waveform?      | string    | base64 encoded bytearray representing a sampled waveform (currently for voice messages)                                                          |
-| flags?         | integer   | [attachment flags](#DOCS_RESOURCES_MESSAGE/attachment-object-attachment-flags) combined as a [bitfield](https://en.wikipedia.org/wiki/Bit_field) |
+| Field           | Type      | Description                                                                                                                                      |
+|-----------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| id              | snowflake | attachment id                                                                                                                                    |
+| filename        | string    | name of file attached                                                                                                                            |
+| title?          | string    | the title of the file                                                                                                                            |
+| description?    | string    | description for the file (max 1024 characters)                                                                                                   |
+| content_type?   | string    | the attachment's [media type](https://en.wikipedia.org/wiki/Media_type)                                                                          |
+| size            | integer   | size of file in bytes                                                                                                                            |
+| url             | string    | source url of file                                                                                                                               |
+| proxy_url \*    | string    | a proxied url of file                                                                                                                            |
+| height?         | ?integer  | height of file (if image)                                                                                                                        |
+| width?          | ?integer  | width of file (if image)                                                                                                                         |
+| ephemeral? \*\* | boolean   | whether this attachment is ephemeral                                                                                                             |
+| duration_secs?  | float     | the duration of the audio file (currently for voice messages)                                                                                    |
+| waveform?       | string    | base64 encoded bytearray representing a sampled waveform (currently for voice messages)                                                          |
+| flags?          | integer   | [attachment flags](#DOCS_RESOURCES_MESSAGE/attachment-object-attachment-flags) combined as a [bitfield](https://en.wikipedia.org/wiki/Bit_field) |
 
-\* Ephemeral attachments will automatically be removed after a set period of time. Ephemeral attachments on messages are guaranteed to be available as long as the message itself exists.
+\* The proxy url only supports attachments which have a defined `width` and `height`, such as images and videos. For all other attachments, the proxy returns a `415: Unsupported Media Type` error.
+
+\*\* Ephemeral attachments will automatically be removed after a set period of time. Ephemeral attachments on messages are guaranteed to be available as long as the message itself exists.
 
 ###### Attachment Flags
 
