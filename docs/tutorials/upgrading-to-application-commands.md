@@ -8,7 +8,7 @@ As [message content has become a privileged intent](https://support-dev.discord.
 
 This guide is intended to provide developers with apps currently using message content with a resource to walk through implementing and designing commands. Throughout the guide, the terms "application commands" and "commands" are used interchangeably.
 
-![Client interfaces showing the different types of application commands](images/command-types.png)
+![Client interfaces showing the different types of application commands](images/command-types.webp)
 
 :::info
 If you are developing an app for the first time, the [commands documentation](/docs/interactions/application-commands) may be a more helpful resource for you.
@@ -64,7 +64,7 @@ While most apps won’t need to register more than a handful of commands, apps c
 
 Command options is an optional field (`options`) that can be defined when creating commands. When used, options will display for the user to fill out during invocation. You can also provide dynamic option suggestions using the `autocomplete` field. Read more about options [in the documentation](/docs/interactions/application-commands#application-command-object-application-command-option-structure).
 
-![Slash command using options](images/slash-command-options.png)
+![Slash command using options](images/slash-command-options.webp)
 
 ### Using Subcommands to Group Actions
 
@@ -158,7 +158,7 @@ Many libraries on the [Community Resources page](/docs/developer-tools/community
 
 After your URL is set up to handle signature verification and `PING` requests, you can add your Interaction Endpoint URL by navigating to your app settings from the [developer portal](https://discord.com/developers/applications). On the **General Information** page, you’ll see a field for your **Interactions Endpoint URL**. 
 
-![Interactions endpoint URL in app settings](images/interactions-url.png)
+![Interactions endpoint URL in app settings](images/interactions-url.webp)
 
 After you paste your URL and click **Save Changes**, Discord will attempt to verify your endpoint.
 
@@ -273,7 +273,7 @@ For a `/search` command that searches an external service, an app could respond 
 
 Ephemeral messages can also contain message components, so when relevant, there could be a button to share the information in the ephemeral message to a channel.
 
-![Example of ephemeral message to show search results](images/examples-ephemeral-message.png)
+![Example of ephemeral message to show search results](images/examples-ephemeral-message.webp)
 
 ## Onboarding Users
 
@@ -295,7 +295,7 @@ Don’t DM all users in a server where your app is installed. It could get your 
 
 The following is an example of an app update that may be sent to communicate the new way to access commands. Depending on the different features your app adopts (like options, subcommands, permissions, etc.), an update message or changelog entry will look very different.
 
-![Example message updating users about a new feature](images/examples-update-message.png)
+![Example message updating users about a new feature](images/examples-update-message.webp)
 
 ### Making Help Available
 

@@ -62,7 +62,7 @@ To start, [remix (or clone) the Glitch project 🎏](https://glitch.com/edit/#!/
 
 When you remix the project, you'll see a new Glitch project with a unique name similar to this:
 
-![Glitch Remix](images/linked-roles-glitch.png)
+![Glitch Remix](images/linked-roles-glitch.webp)
 
 #### Project structure
 
@@ -94,7 +94,7 @@ First, copy your bot user’s token from earlier and paste it in the `DISCORD_TO
 
 Next, navigate to your app settings in the developer portal, and navigate to OAuth2 -> General. Copy the Client ID and Client Secret for your application, and paste the values as `DISCORD_CLIENT_ID` and `DISCORD_CLIENT_SECRET` in your `.env`. 
 
-![Configure OAuth2](images/linked-roles-oauth-config.png)
+![Configure OAuth2](images/linked-roles-oauth-config.webp)
 
 Now, we need to set the Redirect URL that will be used for our OAuth2 flow. Go back to Glitch, and click the `Share` button for your project. Copy the public live URL for your app:
 
@@ -108,7 +108,7 @@ Go to the General Information tab in the developer portal, and scroll down to th
 For the Glitch project used in the screenshots, the verification URL would be `https://adjoining-crawling-yamamomo.glitch.me/linked-role`
 :::
 
-![Verify endpoint](images/linked-roles-verify-endpoint.png)
+![Verify endpoint](images/linked-roles-verify-endpoint.webp)
 
 Finally, to generate a unique cookie secret, go back to Glitch, and click on the `Terminal` tab. Run the following commands:
 
@@ -139,7 +139,7 @@ Go back to Glitch, click the **terminal** tab, and run the following command:
 $ node src/register.js
 ```
 
-![Register Metadata Schema](images/linked-roles-register.png)
+![Register Metadata Schema](images/linked-roles-register.webp)
 
 ## Trying it out
 
@@ -151,7 +151,7 @@ To try out the app, we'll create a linked role in a server where you have admin 
 
 Give the role a name, save it, then click on `Links`. Click the `Add requirement` button, and you should see your bot in the list of available Apps. Click on it, and you will see a setup screen where you can configure specific criteria for your role.
 
-![Verification Setup](images/linked-roles-verification-setup.png)
+![Verification Setup](images/linked-roles-verification-setup.webp)
 
 ### Acquiring the role
 
@@ -161,7 +161,7 @@ To acquire your newly created role, click the server name in the upper left corn
 When you connect your account, one of the scopes requested in the OAuth flow is `role_connections.write`, which is required for an app to update a user's role connection information.
 :::
 
-![Connect accounts](images/linked-roles-connect-account.png)
+![Connect accounts](images/linked-roles-connect-account.webp)
 
 Click on the linked role criteria. This should lead to the Discord OAuth2 consent screen. Click `Authorize`, and then return to Discord. 
 

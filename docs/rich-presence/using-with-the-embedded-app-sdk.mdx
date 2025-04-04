@@ -20,7 +20,7 @@ The rest of the guide assumes you've already developed an [app](/docs/quick-star
 
 By default, when a user is connected to your Activity, the app's icon will appear on their profile. If the user viewing the profile has the ability to join, an "Ask to Join" button will be displayed as well.
 
-![Example of default Rich Presence data for an Activity](images/default-presence-activities.png)
+![Example of default Rich Presence data for an Activity](images/default-presence-activities.webp)
 
 While this is okay, it's pretty limited and doesn't provide much context about what a user is actually *doing* inside of the Activity. In the following sections, we'll take a look at what richer and more actionable presence can look like.
 
@@ -28,7 +28,7 @@ While this is okay, it's pretty limited and doesn't provide much context about w
 
 Now let's see what custom presence data can look like when a user joins your Activity. The [types for these fields](/docs/rich-presence/using-with-the-embedded-app-sdk#setactivity-fields) and [examples](/docs/rich-presence/using-with-the-embedded-app-sdk#setactivity-example) are in the sections below, but for now let's just get an idea of what we're working with:
 
-![Image of where Rich Presence data appears in Discord profiles for Activities](images/annotated-presence-data-activities.png)
+![Image of where Rich Presence data appears in Discord profiles for Activities](images/annotated-presence-data-activities.webp)
 
 A few small things to note about the above image:
 1. `large_image` and `small_image` are both in the `assets` object, which you can see below in the [table below](/docs/rich-presence/using-with-the-embedded-app-sdk#activity-partial-object). They're labeled with the object's keys to make it more clear how they appear in a Discord profile.
@@ -99,7 +99,7 @@ All of the fields on the partial object are optional and nullable
 
 Now let's take a look at more of a real example. Take a look at the Rich Presence data below that is for an Activity:
 
-![Example of a fake game's Rich Presence data](images/activities-presence-example.png)
+![Example of a fake game's Rich Presence data](images/activities-presence-example.webp)
 
 To create this sort of Rich Presence, here is what the `setActivity()` code would look like:
 
