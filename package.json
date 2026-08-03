@@ -16,9 +16,5 @@
 	"devDependencies": {
 		"husky": "^9.1.7",
 		"lint-staged": "^16.4.0"
-	},
-	"lint-staged": {
-		"*.{md,mdx}": "markdown-table-formatter",
-		"*.{ts,tsx,js,jsx,json}": "bash -c 'npm run lint:fix && npm run build'"
 	}
 }
